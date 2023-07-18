@@ -433,6 +433,13 @@ li {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .team-box {
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 1158px) {
   .team-box {
     gap: 24px;
@@ -440,7 +447,6 @@ li {
 }
 .team-li {
   background-color: var(--white-color);
-  display: block;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -517,12 +523,32 @@ li {
 }
 .list-customer {
   display: flex;
-  gap: 24px;
+  gap: 72px 16px;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .list-customer {
+    gap: 72px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-customer {
+    gap: 24px;
+  }
+}
 .customers-li {
-  width: 168px;
+  width: calc((100%- 16px) / 2);
   height: 88px;
+}
+@media screen and (min-width: 768px) {
+  .customers-li {
+    width: calc((100%- 48px) / 3);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .customers-li {
+    width: calc((100%- 120px) / 6);
+  }
 }
 .link-customers {
   width: 100%;
