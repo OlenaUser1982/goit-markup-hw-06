@@ -64,6 +64,8 @@ li {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 .container {
@@ -78,13 +80,7 @@ li {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
+
 .header-logo {
   color: var(--akcent-color);
   font-family: "Raleway", sans-serif;
@@ -295,8 +291,13 @@ li {
   .section-efective {
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-bg-desk-2x.jpg);
-    padding: 188px 0 188px 0;
+    padding: 112px 0 188px 0;
     background-size: cover;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section-efective {
+    padding: 188px 0 188px 0;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -611,11 +612,6 @@ li {
 @media screen and (min-width: 768px) {
   .list-customer {
     gap: 72px 24px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .list-customer {
-    gap: 24px;
   }
 }
 .customers-li {
@@ -987,7 +983,7 @@ li {
   width: 408px;
   min-height: 584px;
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 50%;
   transform: translate(-50%) scale(1);
   border-radius: 4px;
