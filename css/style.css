@@ -424,7 +424,8 @@ li {
 }
 @media screen and (min-width: 1158px) {
   .plus-title {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 20px;
   }
 }
 .plus-text {
@@ -973,7 +974,7 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   border-radius: 4px;
   background: var(--dairy);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
